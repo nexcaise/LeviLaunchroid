@@ -1,0 +1,395 @@
+<resources>
+    <!-- Common -->
+    <string name="app_name">LeviLauncher</string>
+    <string name="minecraft">Minecraft</string>
+    <string name="launch">启动</string>
+
+    <!-- Mods -->
+    <string name="mods_title">🧩 模组 (%d)</string>
+    <string name="mods_section_title">🧩 模组</string>
+    <string name="external_mods_label">外部模组</string>
+    <string name="inbuilt_mods_label">内置模组</string>
+    <string name="manage_mods">管理模组</string>
+    <string name="no_mods_found">未找到模组</string>
+    <string name="mod_load_order">加载顺序：%d</string>
+    <string name="drag_to_reorder">拖动以重新排序</string>
+    <string name="mod_reordered">模组顺序已更新</string>
+
+    <!-- About -->
+    <string name="about_title">☕ 关于</string>
+    <string name="copyright">©2024–2025 LeviMC. 保留所有权利</string>
+    <string name="font_license">本软件使用 Misans 字体</string>
+    <string name="quick_actions_title">快捷操作</string>
+    <string name="content_management_subtitle">管理世界、资源包和行为包</string>
+    <string name="import_apk_subtitle">从 APK 或 APKS 文件安装 Minecraft</string>
+    <string name="ms_add_account">添加账号</string>
+    <string name="ms_add_account_subtitle">使用 Microsoft 登录</string>
+    <string name="microsoft_accounts">Microsoft 账号</string>
+    <string name="manage_accounts">管理</string>
+
+    <!-- Dialogs -->
+    <string name="resourcepack_detected_title">检测到资源包导入</string>
+    <string name="resourcepack_detected_message">是否立即启动游戏？\n\n资源包：%s</string>
+    <string name="launch_now">立即启动</string>
+    <string name="launch_later">稍后启动</string>
+
+    <string name="import_confirmation_title">导入模组</string>
+    <string name="import_confirmation_message">确定要导入所选的 %d 个模组文件吗？</string>
+    <string name="overwrite_file_title">文件已存在</string>
+    <string name="overwrite_file_message">文件 %s 已存在，是否覆盖？</string>
+    <string name="overwrite">覆盖</string>
+    <string name="skip">跳过</string>
+    <string name="confirm">确认</string>
+
+    <string name="installed_packages">已安装包</string>
+    <string name="local_custom">本地自定义</string>
+
+    <string name="check_update">检查更新</string>
+    <string name="version_prefix">版本号：</string>
+
+    <!-- Permissions -->
+    <string name="storage_permission_title">需要存储权限</string>
+    <string name="storage_permission_message">授予存储权限以便访问 mods 目录，检测模组。</string>
+    <string name="grant_permission">授予权限</string>
+    <string name="cancel">取消</string>
+
+    <!-- Feedback -->
+    <string name="files_processed">成功处理 %d 个模组文件</string>
+    <string name="user_cancelled">用户取消导入</string>
+
+
+    <string name="exit">退出</string>
+
+    <string name="overlay_permission_message">请授予悬浮窗权限</string>
+    <string name="overlay_permission_denied_message">请授予悬浮窗权限，否则无法显示日志窗口。</string>
+    <string name="overlay_permission_not_granted">未授予悬浮窗权限</string>
+    <string name="storage_permission_not_granted">未授予存储权限</string>
+
+    <string name="import_apk">导入APK</string>
+    <string name="install">安装</string>
+    <string name="version_name">版本信息</string>
+    <string name="name_invalid">不符合命名规则或已存在！</string>
+    <string name="install_done">安装完成，版本：%1$s</string>
+
+    <string name="illegal_apk_title">非法APK</string>
+    <string name="not_mc_apk">不是Minecraft APK</string>
+    <string name="not_apk_or_apks">请选择 APK 或 APKS 文件</string>
+
+    <string name="not_found_version">未发现版本</string>
+
+    <string name="installing_title">正在安装中…</string>
+    <string name="installing_message">请稍候，正在安装MC中</string>
+
+    <string name="enable_debug_log">启用Debug Log</string>
+
+    <string name="settings_title">设置</string>
+    <string name="settings_desc">您的启动器设置</string>
+
+    <string name="unknown_sources_permission_title">安装权限</string>
+    <string name="unknown_sources_permission_message">请授予安装未知来源应用的权限，否则无法完成应用更新/安装。点击“授权”前往系统设置开启后返回本应用继续操作。</string>
+
+    <string name="new_version_found">发现新版本：%1$s</string>
+    <string name="update_question">是否下载并安装最新版本？</string>
+    <string name="download_update">下载更新</string>
+    <string name="ignore_this_version">忽略此版本</string>
+    <string name="update_progress">下载进度: %1$d%%</string>
+    <string name="update_failed">下载失败: %1$s</string>
+    <string name="install_failed">无法安装更新: %1$s</string>
+    <string name="already_latest_version">已是最新版本 (%1$s)</string>
+    <string name="version_ignored">此版本已被忽略</string>
+    <string name="downloading_update">正在下载更新…</string>
+
+    <string name="repair_libs_in_progress">修复游戏库文件中…</string>
+    <string name="repair_completed">修复完成</string>
+    <string name="repair_libs_success_message">游戏库文件已成功修复，现在可以启动游戏</string>
+    <string name="repair_failed">修复失败</string>
+    <string name="repair_libs_failed_message">无法修复游戏库文件，请检查文件完整性</string>
+    <string name="repair_error">修复出错</string>
+    <string name="repair_libs_error_message">修复过程中发生错误: %s</string>
+    <string name="missing_libs_title">缺少游戏库文件 - %s</string>
+    <string name="missing_libs_message">检测到缺少必要的游戏库文件，是否立即修复？</string>
+    <string name="repair">修复</string>
+    <string name="repair_libs_dialog_title">修复游戏库文件</string>
+    <string name="repair_preparing">准备中…</string>
+    <string name="repair_processing">正在提取库文件…</string>
+    
+    <string name="theme_title">主题模式</string>
+    <string name="theme_follow_system">跟随系统</string>
+    <string name="theme_light">强制白天</string>
+    <string name="theme_dark">强制夜间</string>
+
+    <string name="error_no_browser">无法打开浏览器</string>
+
+    <string name="dialog_title_no_version">未选择版本</string>
+    <string name="dialog_message_no_version">请在启动前选择游戏版本。</string>
+    <string name="dialog_title_version_isolation">需要版本隔离</string>
+    <string name="dialog_message_version_isolation">这是一个导入的版本。请在设置中启用版本隔离以启动此版本。</string>
+    <string name="dialog_positive_enable">启用</string>
+    <string name="dialog_title_launch_failed">启动失败</string>
+    <string name="dialog_message_launch_failed">无法启动Minecraft：%1$s</string>
+    <string name="dialog_title_disable_version_isolation">禁用版本隔离</string>
+    <string name="dialog_message_disable_version_isolation">您尝试在启用版本隔离的情况下启动已安装的版本。请禁用版本隔离以继续。</string>
+    <string name="dialog_positive_disable">禁用</string>
+    <string name="dialog_positive_ok">确定</string>
+
+
+    <string name="eula_title">LeviLauncher 用户协议</string>
+    <string name="eula_message"><b>欢迎使用 LeviLauncher</b>\n\n使用本软件即表示您同意：\n\n• 此为<b>非官方</b> Minecraft 启动器\n• 您需拥有<b>合法授权</b>的 Minecraft 副本\n• 禁止任何形式的盗版或作弊行为\n• 模组/资源包使用风险自负\n• 与 Mojang/Microsoft 无关联\n\n继续使用视为接受条款</string>
+    <string name="eula_agree">接受</string>
+    <string name="eula_exit">拒绝</string>
+
+    <string name="allow_unknown_sources">请允许安装未知来源应用再操作</string>
+
+    <string name="dialog_title_delete_version">删除版本</string>
+    <string name="dialog_message_delete_version">确定要删除此自定义版本？删除后不可恢复。</string>
+    <string name="dialog_positive_delete">删除</string>
+    <string name="dialog_negative_cancel">取消</string>
+    <string name="toast_delete_success">删除成功</string>
+    <string name="toast_delete_failed">删除失败: %1$s</string>
+    <string name="error_delete_builtin_version">不能删除内置版本</string>
+    <string name="invalid_mod_file">你选择了非法的模组文件！</string>
+    <string name="error_versions">错误版本</string>
+
+    <string name="dialog_title_delete_mod">删除 Mod</string>
+    <string name="dialog_message_delete_mod">确定要删除该 Mod 吗？</string>
+
+    <string name="version_isolation">版本隔离</string>
+    <!-- Language Setting -->
+    <string name="language">语言</string>
+    <string name="english">English</string>
+    <string name="chinese">简体中文</string>
+    <string name="russian">Русский</string>
+
+    <!-- 版本重命名 -->
+    <string name="rename_version_title">重命名版本</string>
+    <string name="rename_version_message">为此版本输入一个新名称：</string>
+    <string name="new_version_name">新版本名称</string>
+    <string name="rename">重命名</string>
+    <string name="rename_success">版本已成功重命名</string>
+    <string name="rename_failed">重命名失败：%1$s</string>
+    <string name="cannot_rename_installed">无法重命名已安装的版本</string>
+
+    <!-- Content Management -->
+    <string name="content_management">内容管理</string>
+    <string name="worlds_title">🌍 世界</string>
+    <string name="resource_packs_title">📦 资源包</string>
+    <string name="behavior_packs_title">⚙️ 行为包</string>
+    <string name="storage_internal">内部</string>
+    <string name="storage_external">外部</string>
+    <string name="storage_version_isolation">版本隔离</string>
+    <string name="select_storage_label">选择存储：</string>
+    <string name="search_hint">搜索…</string>
+
+    <!-- World Management -->
+    <string name="world_size">大小：%s</string>
+    <string name="world_last_played">上次游玩：%s</string>
+    <string name="import_world">导入世界</string>
+    <string name="export_world">导出世界</string>
+    <string name="delete_world">删除世界</string>
+    <string name="backup_world">备份世界</string>
+    <string name="export">导出</string>
+    <string name="backup">备份</string>
+    <string name="delete">删除</string>
+    <string name="delete_pack">删除</string>
+
+    <!-- Resource Pack Management -->
+    <string name="import_resource_pack">导入资源包</string>
+    <string name="import_behavior_pack">导入行为包</string>
+    <string name="delete_resource_pack">删除资源包</string>
+    <string name="import_skin_pack">导入皮肤包</string>
+    <string name="delete_skin_pack">删除皮肤包</string>
+
+    <!-- Content Operations -->
+    <string name="confirm_delete_world">您确定要删除这个世界吗？此操作无法撤销。</string>
+    <string name="confirm_delete_resource_pack">您确定要删除这个资源包吗？此操作无法撤销。</string>
+
+    <!-- World Editor -->
+    <string name="edit_world">编辑世界</string>
+    <string name="edit">编辑</string>
+    <string name="save">保存</string>
+    <string name="level_dat_not_found">未找到 level.dat</string>
+    <string name="no_editable_properties">未找到可编辑属性</string>
+    <string name="no_data">无数据</string>
+    <string name="error_loading_world">加载世界时出错</string>
+    <string name="world_saved">世界保存成功</string>
+    <string name="save_failed">保存失败</string>
+    <string name="unsaved_changes">未保存的更改</string>
+    <string name="discard_changes_message">您有未保存的更改。要放弃这些更改吗？</string>
+    <string name="discard">放弃</string>
+
+    <!-- Custom Flat World -->
+    <string name="custom_flat_world">自定义超平坦世界</string>
+    <string name="world_name">世界名称</string>
+    <string name="enter_world_name">输入世界名称</string>
+    <string name="biome">生物群系</string>
+    <string name="game_mode">游戏模式</string>
+    <string name="layers">层（从下到上）</string>
+    <string name="layers_hint">拖动排序，向左滑动删除</string>
+    <string name="add_layer">+ 添加层</string>
+    <string name="create_world">创建世界</string>
+    <string name="add_at_least_one_layer">请至少添加一层</string>
+    <string name="world_created_successfully">世界创建成功</string>
+    <string name="failed_to_create_world">创建世界失败</string>
+
+    <!-- Play Store Validation -->
+    <string name="minecraft_playstore_required_title">需要 Play 商店版本</string>
+    <string name="minecraft_playstore_required_message">此启动器仅适用于从 Google Play 商店下载的官方 Minecraft。请安装 Play 商店版本后再继续。</string>
+    <string name="buy_minecraft">获取 Minecraft</string>
+    <string name="minecraft_not_installed_title">未安装 Minecraft</string>
+    <string name="minecraft_not_installed_message">您的设备上似乎没有安装 Minecraft。请先从 Google Play 商店安装以使用此启动器。</string>
+    <string name="install_minecraft">安装 Minecraft</string>
+    <string name="genuine_badge_label">未通过正版验证</string>
+    <string name="invalid_license_detected_toast">非正版MC，请确保设备上MC来自于谷歌商店</string>
+
+
+    <string name="full_mods_title">🧩 模组 </string>
+    <string name="total_mods">模组总数：</string>
+    <string name="enabled_mods">已启用：</string>
+    <string name="add_mod">添加模组</string>
+
+    <!-- Mod Detail -->
+    <string name="mod_detail_title">模组详情</string>
+    <string name="delete_mod">删除模组</string>
+    <string name="error_loading_mod">加载模组详情时出错</string>
+    <string name="mod_enabled">模组已启用</string>
+    <string name="mod_disabled">模组已禁用</string>
+    <string name="mod_filename_format">文件：%s</string>
+    <string name="mod_enable_status">启用状态</string>
+
+    <!-- 版本选择对话框 -->
+    <string name="game_version_select_title">选择游戏版本</string>
+    <string name="back">返回</string>
+    
+    <!-- 启动页 -->
+    <string name="splash_logo_desc">叶子标志</string>
+
+    <!-- 账户管理 -->
+    <string name="accounts_title">账号</string>
+    <string name="not_signed_in">未登录</string>
+    <string name="xuid">XUID</string>
+    <string name="sign_out">退出登录</string>
+    <string name="accounts_active_privilege">已登录</string>
+    <string name="ms_login_title">Microsoft 登录</string>
+    <string name="ms_login_success">已登录为 %1$s</string>
+    <string name="ms_set_active">设为当前</string>
+    <string name="ms_delete">删除</string>
+    <string name="ms_active_badge">当前</string>
+    <string name="ms_login_starting">开始 Microsoft 登录…</string>
+    <string name="ms_login_exchanging">正在交换令牌…</string>
+    <string name="ms_login_auth_xbox_device">正在认证 Xbox 设备…</string>
+    <string name="ms_login_fetch_minecraft_identity">正在获取 Minecraft 身份…</string>
+    <string name="ms_login_failed">Microsoft 登录失败</string>
+    <string name="ms_login_failed_detail">登录失败：%1$s</string>
+    <string name="xbox_avatar">Xbox头像</string>
+    <string name="launcher_managed_mc_login">使用 LeviLauncher 登录 Minecraft</string>
+    <string name="dialog_title_login_required">需要登录</string>
+    <string name="dialog_message_login_required">已开启使用启动器登录，但当前未登录。请前往账号管理登录后再启动。</string>
+    <string name="go_to_accounts">账号管理</string>
+    <string name="disable_launcher_login_and_continue">关闭</string>
+    <string name="sign_in">登录</string>
+    <string name="ms_account_subtitle_format">用户ID：%1$s • 更新：%2$s</string>
+    <string name="about_footer_github">GitHub: https://github.com/LiteLDev/LeviLaunchroid</string>
+
+    <string name="label_current_account">当前账号</string>
+    <string name="label_other_accounts">其他账号</string>
+
+    <string name="crash_title">应用发生崩溃</string>
+    <string name="crash_back_to_main">返回主页面</string>
+    <string name="crash_log_file_label">日志文件：</string>
+    <string name="crash_log_file_missing">日志文件不存在或不可读。</string>
+    <string name="crash_read_failed">读取日志失败：%1$s</string>
+    <string name="crash_emergency_label">紧急信息：</string>
+    <string name="crash_no_details">未获取到崩溃详情。</string>
+     <string name="dialog_title_exit_app">退出应用</string>
+     <string name="dialog_message_exit_app">确定要退出应用吗？</string>
+     <string name="dialog_positive_exit">退出</string>
+
+     <!-- Logcat Overlay i18n additions -->
+     <string name="show_logcat_overlay">显示日志悬浮窗</string>
+    <string name="logcat_live">Logcat：<b>实时</b></string>
+     <string name="logcat_paused">Logcat：已暂停</string>
+
+     <string name="logcat_filter_hint">关键字筛选</string>
+     <string name="logcat_blacklist_hint">黑名单（逗号分隔）</string>
+     <string name="logcat_filter_clear">清除筛选</string>
+     <string name="logcat_filter">筛选</string>
+     <string name="logcat_autoscroll">自动滚动</string>
+     <string name="logcat_pause">暂停</string>
+     <string name="logcat_clear">清空</string>
+     <string name="logcat_close">关闭</string>
+     <string name="logcat_corner_bottom_left">调整大小：左下角</string>
+     <string name="logcat_corner_bottom_right">调整大小：右下角</string>
+
+    <!-- Inbuilt Mods -->
+    <string name="inbuilt_mods">内置模组</string>
+    <string name="inbuilt_mods_title">🔧 内置模组</string>
+    <string name="inbuilt_mods_subtitle">无需原生库即可运行的内部模组</string>
+    <string name="no_inbuilt_mods_available">所有内置模组均已添加</string>
+    <string name="inbuilt_mod_added">%s 已添加到模组</string>
+    <string name="inbuilt_mod_removed">%s 已从模组移除</string>
+    <string name="add">添加</string>
+    <string name="remove">移除</string>
+
+    <!-- Inbuilt Mods -->
+    <string name="inbuilt_mod_quick_drop">快速丢弃</string>
+    <string name="inbuilt_mod_quick_drop_desc">快速丢弃物品</string>
+    <string name="inbuilt_mod_camera">快速切换视角</string>
+    <string name="inbuilt_mod_camera_desc">切换相机视角</string>
+    <string name="inbuilt_mod_hud">隐藏界面</string>
+    <string name="inbuilt_mod_hud_desc">隐藏快捷栏和 UI</string>
+    <string name="inbuilt_mod_autosprint">自动疾跑</string>
+    <string name="inbuilt_mod_autosprint_desc">切换疾跑开启/关闭</string>
+    <string name="inbuilt_mod_chick_pet">小鸡宠物</string>
+    <string name="inbuilt_mod_chick_pet_desc">一只可爱的像素小鸡，会四处走动、睡觉，触摸它会跑开！</string>
+    <string name="inbuilt_badge">内置</string>
+    <string name="autosprint_key_ctrl">左 Ctrl</string>
+    <string name="autosprint_key_shift">Shift</string>
+    <string name="autosprint_key_label">疾跑按键：</string>
+    <string name="configure">配置</string>
+    <string name="overlay_button_size">悬浮按钮大小</string>
+    <string name="overlay_button_opacity">悬浮按钮透明度</string>
+    <string name="settings">设置</string>
+
+    <!-- Memory Editor -->
+    <string name="memory_editor_enable">内存编辑器</string>
+    <string name="memory_editor_title">内存编辑器</string>
+    <string name="memory_editor_minimize">最小化</string>
+    <string name="memory_editor_close">关闭</string>
+    <string name="memory_editor_value_hint">数值</string>
+    <string name="memory_editor_search">搜索</string>
+    <string name="memory_editor_filter">筛选</string>
+    <string name="memory_editor_reset">重置</string>
+    <string name="memory_editor_address">地址</string>
+    <string name="memory_editor_value">数值</string>
+    <string name="memory_editor_action">操作</string>
+    <string name="memory_editor_tab_search">搜索</string>
+    <string name="memory_editor_tab_saved">已保存</string>
+    <string name="memory_editor_save">保存</string>
+    <string name="memory_editor_freeze">锁定</string>
+    <string name="memory_editor_delete">删除</string>
+    <string name="memory_editor_overlay">悬浮按钮</string>
+    <string name="memory_overlay_config_title">配置悬浮按钮</string>
+    <string name="memory_overlay_name">按钮名称</string>
+    <string name="memory_overlay_name_hint">例如：生命值、速度</string>
+    <string name="memory_overlay_original_value">原始值</string>
+    <string name="memory_overlay_new_value">新值</string>
+    <string name="memory_overlay_new_value_hint">输入要应用的值</string>
+    <string name="memory_overlay_toggleable">可切换</string>
+    <string name="memory_editor_warning_title">⚠️ 开发者功能警告</string>
+    <string name="memory_editor_warning_message">内存编辑器是一个高级工具，仅供模组开发和调试使用。\n\n此功能不适合普通用户。不当使用可能导致：\n• 游戏崩溃\n• 数据损坏\n• 意外行为\n\n请仅在您了解其用途时启用此功能。</string>
+
+    <!-- Extract Structures -->
+    <string name="extract_structures">提取结构</string>
+    <string name="no_structures_found">在此世界中未发现任何结构</string>
+    <string name="no_structures_found_title">未找到结构</string>
+    <string name="no_structures_found_message">在此世界中未发现任何结构。\n\n要提取结构：\n1. 通过此启动器在 Minecraft 中打开此世界\n2. 放置结构方块并设置为保存模式\n3. 为结构命名并点击保存\n4. 退出世界并返回此处\n5. 再次点击"提取结构"</string>
+    <string name="structures_exported">已导出 %d 个结构至 %s</string>
+    <string name="structures_exported_zip">已导出 %d 个结构至 ZIP</string>
+    <string name="structure_found">发现结构</string>
+    <string name="structure_found_with_size">%1$s (%2$s)</string>
+    <string name="structure_exported">已导出：%s</string>
+    <string name="extract">提取</string>
+    <string name="structures_found_title">发现结构</string>
+    <string name="structures_found_count">在此世界中发现 %d 个结构</string>
+
+ </resources>
