@@ -240,166 +240,166 @@
     <string name="failed_to_create_world">Gagal menciptakan dunia</string>
 
     <!-- Play Store Validation -->
-    <string name="minecraft_playstore_required_title">Play Store Version Required</string>
-    <string name="minecraft_playstore_required_message">This launcher works only with the official Minecraft app from the Google Play Store. Please install the Play Store version to continue.</string>
-    <string name="buy_minecraft">Get Minecraft</string>
-    <string name="minecraft_not_installed_title">Minecraft Not Installed</string>
-    <string name="minecraft_not_installed_message">Minecraft isn’t installed on your device. Please install it from the Google Play Store to use this launcher.</string>
-    <string name="install_minecraft">Install Minecraft</string>
-    <string name="genuine_badge_label">License not verified</string>
-    <string name="invalid_license_detected_toast">Non-genuine Minecraft detected. Ensure Minecraft is from Google Play Store</string>
+    <string name="minecraft_playstore_required_title">Versi Play Store Diperlukan</string>
+    <string name="minecraft_playstore_required_message">Peluncur ini hanya berfungsi dengan aplikasi Minecraft resmi dari Google Play Store. Silakan instal versi Play Store untuk melanjutkan.</string>
+    <string name="buy_minecraft">Dapatkan Minecraft Di Play Store</string>
+    <string name="minecraft_not_installed_title">Minecraft Belum Terinstal</string>
+    <string name="minecraft_not_installed_message">Minecraft belum terpasang di perangkat Anda. Silakan instal dari Google Play Store untuk menggunakan peluncur ini.</string>
+    <string name="install_minecraft">Instal Minecraft</string>
+    <string name="genuine_badge_label">Lisensi tidak ter-verifikasi</string>
+    <string name="invalid_license_detected_toast">Minecraft palsu terdeteksi. Pastikan Minecraft Anda berasal dari Google Play Store.</string>
 
     <string name="full_mods_title">🧩 Mods </string>
     <string name="total_mods">Total Mods:</string>
-    <string name="enabled_mods">Enabled:</string>
-    <string name="add_mod">Add Mod</string>
+    <string name="enabled_mods">Aktif:</string>
+    <string name="add_mod">Tambahkan Mod</string>
 
     <!-- Mod Detail -->
-    <string name="mod_detail_title">Mod Details</string>
-    <string name="delete_mod">Delete Mod</string>
-    <string name="error_loading_mod">Error loading mod details</string>
-    <string name="mod_enabled">Mod enabled</string>
-    <string name="mod_disabled">Mod disabled</string>
+    <string name="mod_detail_title">Detail Mod</string>
+    <string name="delete_mod">Hapus Mod</string>
+    <string name="error_loading_mod">Terjadi kesalahan saat memuat detail mod.</string>
+    <string name="mod_enabled">Mod diaktifkan</string>
+    <string name="mod_disabled">Mod dinonaktifkan</string>
     <string name="mod_filename_format">File: %s</string>
-    <string name="mod_enable_status">Enable Status</string>
+    <string name="mod_enable_status">Status</string>
 
     <!-- Game Version Select Dialog -->
-    <string name="game_version_select_title">Select Game Version</string>
-    <string name="back">Back</string>
+    <string name="game_version_select_title">Pilih Versi Game</string>
+    <string name="back">Kembali</string>
 
     <!-- Splash -->
-    <string name="splash_logo_desc">Leaf logo</string>
+    <string name="splash_logo_desc">Logo daun</string>
 
     <!-- Accounts & Microsoft Login -->
-    <string name="accounts_title">Accounts</string>
-    <string name="microsoft_accounts">Microsoft Accounts</string>
-    <string name="manage_accounts">Manage accounts</string>
-    <string name="not_signed_in">Not signed in</string>
+    <string name="accounts_title">Akun</string>
+    <string name="microsoft_accounts">Akun Microsoft</string>
+    <string name="manage_accounts">Kelola akun</string>
+    <string name="not_signed_in">Belum masuk</string>
     <string name="xuid">XUID</string>
-    <string name="sign_in">Sign In</string>
-    <string name="sign_out">Sign Out</string>
-    <string name="accounts_active_privilege">Signed in</string>
+    <string name="sign_in">Masuk</string>
+    <string name="sign_out">Keluar</string>
+    <string name="accounts_active_privilege">Sudah masuk</string>
 
-    <string name="ms_login_title">Microsoft Login</string>
-    <string name="ms_login_starting">Starting Microsoft login…</string>
-    <string name="ms_login_exchanging">Exchanging token…</string>
-    <string name="ms_login_auth_xbox_device">Authenticating Xbox device…</string>
-    <string name="ms_login_fetch_minecraft_identity">Fetching Minecraft identity…</string>
-    <string name="ms_login_success">Signed in as %1$s</string>
-    <string name="ms_login_failed">Microsoft login failed</string>
-    <string name="ms_login_failed_detail">Login failed: %1$s</string>
+    <string name="ms_login_title">Login Microsoft</string>
+    <string name="ms_login_starting">Memulai proses login Microsoft…</string>
+    <string name="ms_login_exchanging">Menukarkan token…</string>
+    <string name="ms_login_auth_xbox_device">Memverifikasi perangkat Xbox…</string>
+    <string name="ms_login_fetch_minecraft_identity">Mengambil identitas akun Minecraft…</string>
+    <string name="ms_login_success">Masuk sebagai %1$s</string>
+    <string name="ms_login_failed">Login Microsoft gagal</string>
+    <string name="ms_login_failed_detail">Login gagal: %1$s</string>
 
-    <string name="ms_set_active">Set Active</string>
-    <string name="ms_delete">Delete</string>
-    <string name="ms_active_badge">Active</string>
-    <string name="ms_account_subtitle_format">User ID: %1$s • Updated: %2$s</string>
-    <string name="xbox_avatar">Xbox avatar</string>
-    <string name="launcher_managed_mc_login">Sign in to Minecraft with LeviLauncher</string>
-    <string name="dialog_title_login_required">Sign-in required</string>
-    <string name="dialog_message_login_required">Launcher-managed login is enabled, but no account is signed in. Go to Accounts to sign in.</string>
-    <string name="go_to_accounts">Accounts</string>
-    <string name="disable_launcher_login_and_continue">Close</string>
+    <string name="ms_set_active">Aktifkan</string>
+    <string name="ms_delete">Hapus</string>
+    <string name="ms_active_badge">Aktif</string>
+    <string name="ms_account_subtitle_format">ID Pengguna: %1$s • Diperbarui: %2$s</string>
+    <string name="xbox_avatar">Avatar Xbox</string>
+    <string name="launcher_managed_mc_login">Masuk ke Minecraft menggunakan LeviLauncher</string>
+    <string name="dialog_title_login_required">Login diperlukan</string>
+    <string name="dialog_message_login_required">Login yang dikelola oleh launcher diaktifkan, tetapi belum ada akun yang masuk. Buka Akun untuk masuk.</string>
+    <string name="go_to_accounts">Akun</string>
+    <string name="disable_launcher_login_and_continue">Tutup</string>
 
     <!-- Popup labels -->
-    <string name="label_current_account">Current Account</string>
-    <string name="label_other_accounts">Other Accounts</string>
+    <string name="label_current_account">Akun Sekarang</string>
+    <string name="label_other_accounts">Akun Lain</string>
 
-    <string name="crash_title">Application crashed</string>
-    <string name="crash_back_to_main">Back to Home</string>
-    <string name="crash_log_file_label">Log file:</string>
-    <string name="crash_log_file_missing">Log file not found or unreadable.</string>
-    <string name="crash_read_failed">Failed to read log: %1$s</string>
-    <string name="crash_emergency_label">Emergency:</string>
-    <string name="crash_no_details">No crash details available.</string>
-    <string name="dialog_title_exit_app">Exit App</string>
-    <string name="dialog_message_exit_app">Are you sure you want to exit?</string>
-    <string name="dialog_positive_exit">Exit</string>
+    <string name="crash_title">Aplikasi mengalami kerusakan.</string>
+    <string name="crash_back_to_main">Kembali ke Beranda</string>
+    <string name="crash_log_file_label">Berkas log:</string>
+    <string name="crash_log_file_missing">Berkas log tidak ditemukan atau tidak dapat dibaca.</string>
+    <string name="crash_read_failed">Gagal membaca log: %1$s</string>
+    <string name="crash_emergency_label">Kerusakan darurat:</string>
+    <string name="crash_no_details">Tidak ada detail kecelakaan yang tersedia..</string>
+    <string name="dialog_title_exit_app">Keluar dari Aplikasi</string>
+    <string name="dialog_message_exit_app">Apakah Anda yakin ingin keluar?</string>
+    <string name="dialog_positive_exit">Keluar</string>
     <string name="show_logcat_overlay">Logcat overlay</string>
-    <string name="logcat_live">Logcat: <b>live</b></string>
-    <string name="logcat_paused">Logcat: paused</string>
+    <string name="logcat_live">Logcat: <b>hidup(live)</b></string>
+    <string name="logcat_paused">Logcat: terhenti</string>
     <!-- Logcat Overlay i18n -->
-    <string name="logcat_filter_hint">Keyword filter</string>
-    <string name="logcat_blacklist_hint">Blacklist (comma-separated)</string>
-    <string name="logcat_filter_clear">Clear filters</string>
+    <string name="logcat_filter_hint">Filter kata kunci</string>
+    <string name="logcat_blacklist_hint">Daftar hitam (dipisahkan koma)</string>
+    <string name="logcat_filter_clear">Hapus filter</string>
     <string name="logcat_filter">Filter</string>
     <string name="logcat_autoscroll">Auto-scroll</string>
-    <string name="logcat_pause">Pause</string>
-    <string name="logcat_clear">Clear</string>
-    <string name="logcat_close">Close</string>
-    <string name="logcat_corner_bottom_left">Resize: bottom-left</string>
-    <string name="logcat_corner_bottom_right">Resize: bottom-right</string>
+    <string name="logcat_pause">Berhentikan(pause)</string>
+    <string name="logcat_clear">Bersihkan</string>
+    <string name="logcat_close">Tutup</string>
+    <string name="logcat_corner_bottom_left">Ubah ukuran: kiri bawah</string>
+    <string name="logcat_corner_bottom_right">Ubah ukuran: kanan bawah</string>
 
     <!-- Inbuilt Mods -->
-    <string name="inbuilt_mods">Inbuilt Mods</string>
-    <string name="inbuilt_mods_title">🔧 Inbuilt Mods</string>
-    <string name="inbuilt_mods_subtitle">Internal mods that run without native libraries</string>
-    <string name="no_inbuilt_mods_available">All inbuilt mods have been added</string>
-    <string name="inbuilt_mod_added">%s added to mods</string>
-    <string name="inbuilt_mod_removed">%s removed from mods</string>
-    <string name="add">Add</string>
-    <string name="remove">Remove</string>
+    <string name="inbuilt_mods">Mod Bawaan</string>
+    <string name="inbuilt_mods_title">🔧 Mod Bawaan</string>
+    <string name="inbuilt_mods_subtitle">Mod internal/bawaan yang berjalan tanpa native libraries(.so mod)</string>
+    <string name="no_inbuilt_mods_available">Semua mod bawaan telah ditambahkan.</string>
+    <string name="inbuilt_mod_added">%s ditambahkan ke mod</string>
+    <string name="inbuilt_mod_removed">%s dihapus dari modifikasi</string>
+    <string name="add">Tambahkan</string>
+    <string name="remove">Hapuskan</string>
     
     <!-- Inbuilt Mods -->
     <string name="inbuilt_mod_quick_drop">Quick Drop</string>
-    <string name="inbuilt_mod_quick_drop_desc">Drop items quickly</string>
-    <string name="inbuilt_mod_camera">Quick Camera Perspective</string>
-    <string name="inbuilt_mod_camera_desc">Toggle camera view</string>
+    <string name="inbuilt_mod_quick_drop_desc">Jatuhkan barang dengan cepat</string>
+    <string name="inbuilt_mod_camera">Perspektif Kamera Cepat</string>
+    <string name="inbuilt_mod_camera_desc">Alihkan tampilan kamera</string>
     <string name="inbuilt_mod_hud">Hide HUD</string>
-    <string name="inbuilt_mod_hud_desc">Hide hotbar and UI</string>
+    <string name="inbuilt_mod_hud_desc">Sembunyikan hotbar dan UI</string>
     <string name="inbuilt_mod_autosprint">Auto Sprint</string>
-    <string name="inbuilt_mod_autosprint_desc">Toggle sprint on/off</string>
+    <string name="inbuilt_mod_autosprint_desc">Aktifkan/nonaktifkan lari cepat</string>
     <string name="inbuilt_mod_chick_pet">Chick Pet</string>
-    <string name="inbuilt_mod_chick_pet_desc">A cute pixelated chick that walks around, sleeps, and runs when touched!</string>
-    <string name="inbuilt_badge">INBUILT</string>
+    <string name="inbuilt_mod_chick_pet_desc">Seekor anak ayam piksel yang lucu yang bisa berjalan, tidur, dan berlari saat disentuh!</string>
+    <string name="inbuilt_badge">BAWAAN</string>
     <string name="autosprint_key_ctrl">Ctrl Left</string>
     <string name="autosprint_key_shift">Shift</string>
     <string name="autosprint_key_label">Sprint Key:</string>
-    <string name="configure">Configure</string>
-    <string name="overlay_button_size">Overlay Button Size</string>
-    <string name="overlay_button_opacity">Overlay Button Opacity</string>
-    <string name="settings">Settings</string>
+    <string name="configure">Konfigurasi</string>
+    <string name="overlay_button_size">Ukuran Tombol Overlay</string>
+    <string name="overlay_button_opacity">Opasitas Tombol Overlay</string>
+    <string name="settings">Pengaturan</string>
 
     <!-- Memory Editor -->
     <string name="memory_editor_enable">Memory Editor</string>
     <string name="memory_editor_title">Memory Editor</string>
-    <string name="memory_editor_minimize">Minimize</string>
-    <string name="memory_editor_close">Close</string>
-    <string name="memory_editor_value_hint">Value</string>
-    <string name="memory_editor_search">Search</string>
+    <string name="memory_editor_minimize">Memperkecil</string>
+    <string name="memory_editor_close">Tutup</string>
+    <string name="memory_editor_value_hint">Nilai</string>
+    <string name="memory_editor_search">Cari</string>
     <string name="memory_editor_filter">Filter</string>
     <string name="memory_editor_reset">Reset</string>
-    <string name="memory_editor_address">Address</string>
-    <string name="memory_editor_value">Value</string>
-    <string name="memory_editor_action">Action</string>
-    <string name="memory_editor_tab_search">Search</string>
-    <string name="memory_editor_tab_saved">Saved</string>
-    <string name="memory_editor_save">Save</string>
-    <string name="memory_editor_freeze">Freeze</string>
-    <string name="memory_editor_delete">Delete</string>
+    <string name="memory_editor_address">Alamat</string>
+    <string name="memory_editor_value">Nilai</string>
+    <string name="memory_editor_action">Aksi</string>
+    <string name="memory_editor_tab_search">Cari</string>
+    <string name="memory_editor_tab_saved">Tersimpan</string>
+    <string name="memory_editor_save">Simpan</string>
+    <string name="memory_editor_freeze">Bekukan</string>
+    <string name="memory_editor_delete">Hapus</string>
     <string name="memory_editor_overlay">Overlay</string>
-    <string name="memory_overlay_config_title">Configure Overlay Button</string>
-    <string name="memory_overlay_name">Button Name</string>
-    <string name="memory_overlay_name_hint">e.g. Health, Speed</string>
-    <string name="memory_overlay_original_value">Original Value</string>
-    <string name="memory_overlay_new_value">New Value</string>
-    <string name="memory_overlay_new_value_hint">Enter value to apply</string>
-    <string name="memory_overlay_toggleable">Toggleable</string>
-    <string name="memory_editor_warning_title">⚠️ Developer Feature Warning</string>
-    <string name="memory_editor_warning_message">The Memory Editor is an advanced tool intended ONLY for mod development and debugging purposes.\n\nThis feature is NOT for normal users. Improper use may cause:\n• Game crashes\n• Data corruption\n• Unexpected behavior\n\nOnly enable this if you understand what you are doing.</string>
+    <string name="memory_overlay_config_title">Konfigurasi Tombol Overlay</string>
+    <string name="memory_overlay_name">Nama Tombol</string>
+    <string name="memory_overlay_name_hint">misalnya Zoom</string>
+    <string name="memory_overlay_original_value">Nilai Asli</string>
+    <string name="memory_overlay_new_value">Nilai Baru</string>
+    <string name="memory_overlay_new_value_hint">Masukkan nilai yang akan diterapkan</string>
+    <string name="memory_overlay_toggleable">Dapat diaktifkan/dinonaktifkan</string>
+    <string name="memory_editor_warning_title">⚠️ Peringatan Fitur Pengembang</string>
+    <string name="memory_editor_warning_message">Peringatan Editor Memori adalah alat lanjutan yang HANYA dimaksudkan untuk pengembangan mod dan tujuan debugging.\n\nFitur ini TIDAK untuk pengguna biasa. Penggunaan yang tidak tepat dapat menyebabkan:\n• Game crash\n• Kerusakan data\n• Perilaku tidak terduga\n\nHanya aktifkan ini jika Anda memahami apa yang Anda lakukan.</string>
 
     <!-- Extract Structures -->
-    <string name="extract_structures">Extract Structures</string>
-    <string name="no_structures_found">No structures found in this world</string>
-    <string name="no_structures_found_title">No Structures Found</string>
-    <string name="no_structures_found_message">No structures were found in this world.\n\nTo extract a structure:\n1. Open this world in Minecraft using this launcher\n2. Place a Structure Block and set it to Save mode\n3. Give your structure a name and press Save\n4. Exit the world and return here\n5. Press \"Extract Structures\" again</string>
-    <string name="structures_exported">Exported %d structures to %s</string>
-    <string name="structures_exported_zip">Exported %d structures to ZIP</string>
-    <string name="structure_found">Structure Found</string>
+    <string name="extract_structures">Ekstrak Struktur</string>
+    <string name="no_structures_found">Tidak ditemukan struktur apa pun di dunia ini.</string>
+    <string name="no_structures_found_title">Tidak ditemukan struktur apa pun</string>
+    <string name="no_structures_found_message">Tidak ada struktur yang ditemukan di dunia ini.\n\nUntuk mengekstrak struktur:\n1. Buka dunia ini di Minecraft menggunakan launcher ini\n2. Letakkan Blok Struktur dan atur ke mode Simpan\n3. Beri nama struktur Anda dan tekan Simpan\n4. Keluar dari dunia dan kembali ke sini\n5. Tekan "Ekstrak Struktur" lagi</string>
+    <string name="structures_exported">Mengekspor %d struktur ke %s</string>
+    <string name="structures_exported_zip">Struktur sebanyak %d diekspor ke ZIP.</string>
+    <string name="structure_found">Struktur Ditemukan</string>
     <string name="structure_found_with_size">%1$s (%2$s)</string>
-    <string name="structure_exported">Exported: %s</string>
-    <string name="extract">Extract</string>
-    <string name="structures_found_title">Structures Found</string>
-    <string name="structures_found_count">%d structures found in this world</string>
+    <string name="structure_exported">Diekspor: %s</string>
+    <string name="extract">Ekstrak</string>
+    <string name="structures_found_title">Struktur Ditemukan</string>
+    <string name="structures_found_count">%d struktur yang ditemukan di dunia ini</string>
     
     <string name="ncm">Nexcaise ModLoader</string>
 
