@@ -146,11 +146,6 @@
                 </FrameLayout>
             </LinearLayout>
             
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-            
             <ImageButton
                 android:id="@+id/settings_button"
                 android:layout_width="25dp"
