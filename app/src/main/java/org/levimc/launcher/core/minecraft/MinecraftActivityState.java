@@ -2,6 +2,7 @@ package org.levimc.launcher.core.minecraft;
 
 import android.app.Activity;
 import java.lang.ref.WeakReference;
+import android.content.Context;
 
 public final class MinecraftActivityState {
     private static volatile boolean running = false;
@@ -10,7 +11,9 @@ public final class MinecraftActivityState {
 
     private MinecraftActivityState() {}
 
-    public static void onCreated(Activity activity) {
+    public static void onCreated(Context context) {
+        if(FeatureSettings.getInstance().isNCMEnabled()) NCModloader.onLoad(context);
+        Activity activity = (Activity) context;
         running = true;
         currentActivityRef = new WeakReference<>(activity);
     }

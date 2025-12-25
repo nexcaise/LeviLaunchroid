@@ -24,7 +24,7 @@ class MinecraftActivity : MainActivity() {
             val versionDirName = intent.getStringExtra("MINECRAFT_VERSION_DIR") ?: ""
             val isInstalled = intent.getBooleanExtra("IS_INSTALLED", false)
             val isIsolated = FeatureSettings.getInstance().isVersionIsolationEnabled()
-            val ncme = FeatureSettings.getInstance().isNCMEnabled()
+            //val ncme = FeatureSettings.getInstance().isNCMEnabled()
 
             val version = if (isIsolated && !versionDir.isNullOrEmpty()) {
                 GameVersion(
@@ -51,7 +51,7 @@ class MinecraftActivity : MainActivity() {
             }
 
             gameManager = GamePackageManager.getInstance(applicationContext, version)
-            NCModloader.onLoad(this, ncme)
+            //NCModloader.onLoad(this, ncme)
 
             try {
                 System.loadLibrary("preloader")
