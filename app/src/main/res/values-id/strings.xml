@@ -179,7 +179,7 @@
     <string name="behavior_packs_title">⚙️ Paket Perilaku</string>
     <string name="skin_packs_title">👤 Paket Kulit(skin)</string>
     <string name="worlds_category">Dunia</string>
-    <string name="resource_packs_category">Paket Sumber Daya/string>
+    <string name="resource_packs_category">Paket Sumber Daya</string>
     <string name="behavior_packs_category">Paket Perilaku</string>
     <string name="skin_packs_category">Paket Kulit(skin)</string>
     <string name="storage_internal">Internal</string>
@@ -241,7 +241,7 @@
 
     <!-- Play Store Validation -->
     <string name="minecraft_playstore_required_title">Play Store Version Required</string>
-    <string name="minecraDunia tercipta dengan sukses.ft_playstore_required_message">This launcher works only with the official Minecraft app from the Google Play Store. Please install the Play Store version to continue.</string>
+    <string name="minecraft_playstore_required_message">This launcher works only with the official Minecraft app from the Google Play Store. Please install the Play Store version to continue.</string>
     <string name="buy_minecraft">Get Minecraft</string>
     <string name="minecraft_not_installed_title">Minecraft Not Installed</string>
     <string name="minecraft_not_installed_message">Minecraft isn’t installed on your device. Please install it from the Google Play Store to use this launcher.</string>
