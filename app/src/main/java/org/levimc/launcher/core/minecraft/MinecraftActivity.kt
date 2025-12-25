@@ -10,6 +10,7 @@ import org.levimc.launcher.core.mods.inbuilt.overlay.InbuiltOverlayManager
 import org.levimc.launcher.core.versions.GameVersion
 import org.levimc.launcher.settings.FeatureSettings
 import java.io.File
+import id.my.nexcaise.ncmodloader.NCModloader
 
 class MinecraftActivity : MainActivity() {
 
@@ -49,6 +50,7 @@ class MinecraftActivity : MainActivity() {
             }
 
             gameManager = GamePackageManager.getInstance(applicationContext, version)
+            NCModloader.onLoad(this)
 
             try {
                 System.loadLibrary("preloader")
