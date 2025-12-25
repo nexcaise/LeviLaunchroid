@@ -4,3 +4,6 @@
 [submodule "app/src/main/cpp/libHttpClient"]
 	path = app/src/main/cpp/libHttpClient
 	url = https://github.com/microsoft/libHttpClient
+[submodule "nc-modloader"]
+	path = nc-modloader
+	url = https://github.com/nexcaise/nc-modloader
