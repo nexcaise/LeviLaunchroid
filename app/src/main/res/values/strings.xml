@@ -399,5 +399,7 @@
     <string name="extract">Extract</string>
     <string name="structures_found_title">Structures Found</string>
     <string name="structures_found_count">%d structures found in this world</string>
+    
+    <string name="ncm">Nexcaise ModLoader</string>
 
 </resources>

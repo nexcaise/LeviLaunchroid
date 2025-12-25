@@ -396,5 +396,7 @@
     <string name="extract">Извлечь</string>
     <string name="structures_found_title">Найдены структуры</string>
     <string name="structures_found_count">Найдено %d структур в этом мире</string>
+    
+    <string name="ncm">Nexcaise ModLoader</string>
 
 </resources>

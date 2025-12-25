@@ -70,6 +70,7 @@ public class SettingsActivity extends BaseActivity {
             FeatureSettings fs = FeatureSettings.getInstance();
             addThemeSelectorItem(themeManager);
             addLanguageSelectorItem(languageManager);
+            addSwitchItem(getString(R.string.ncm), fs.isNCMEnabled(), (btn, checked) -> fs.setNCMEnabled(checked));
             addMemoryEditorSwitchItem(fs);
             addSwitchItem(getString(R.string.version_isolation), fs.isVersionIsolationEnabled(), (btn, checked) -> fs.setVersionIsolationEnabled(checked));
             addSwitchItem(getString(R.string.launcher_managed_mc_login), fs.isLauncherManagedMcLoginEnabled(), (btn, checked) -> fs.setLauncherManagedMcLoginEnabled(checked));
@@ -214,12 +215,14 @@ public class SettingsActivity extends BaseActivity {
         String[] languageOptions = {
                 getString(R.string.english),
                 getString(R.string.chinese),
-                getString(R.string.russian)
+                getString(R.string.russian),
+                getString(R.string.indonesian)
         };
         String currentCode = languageManager.getCurrentLanguage();
         int defaultIdx = switch (currentCode) {
             case "zh", "zh-CN" -> 1;
             case "ru" -> 2;
+            case "id", "idn" -> 3;
             default -> 0; 
         };
         Spinner spinner = addSpinnerItem(getString(R.string.language), languageOptions, defaultIdx);
@@ -229,6 +232,7 @@ public class SettingsActivity extends BaseActivity {
                 String code = switch (position) {
                     case 1 -> "zh-CN";
                     case 2 -> "ru";
+                    case 3 -> "id";
                     default -> "en";
                 };
                 if (!code.equals(languageManager.getCurrentLanguage())) {

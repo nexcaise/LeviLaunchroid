@@ -9,6 +9,7 @@ public class FeatureSettings {
     private boolean launcherManagedMcLoginEnabled = false;
     private boolean logcatOverlayEnabled = false;
     private boolean memoryEditorEnabled = false;
+    private boolean NCMEnabled = false;
 
     public enum StorageType {
         INTERNAL,
@@ -45,6 +46,9 @@ public class FeatureSettings {
 
     public boolean isMemoryEditorEnabled() { return memoryEditorEnabled; }
     public void setMemoryEditorEnabled(boolean enabled) { this.memoryEditorEnabled = enabled; autoSave(); }
+    
+    public boolean isNCMEnabled() { return NCMEnabled; }
+    public void setNCMEnabled(boolean enabled) { this.NCMEnabled = enabled; autoSave(); }
 
     private void autoSave() {
         if (appContext != null) {

@@ -115,6 +115,7 @@ android {
 }
 
 dependencies {
+    implementation project(':nc-modloader')
     implementation project(':minecraft')
     implementation project(':minecraft-msftauth')
     implementation libs.core.splashscreen
