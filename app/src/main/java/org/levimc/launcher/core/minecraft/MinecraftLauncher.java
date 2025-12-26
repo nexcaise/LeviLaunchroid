@@ -124,6 +124,7 @@ public class MinecraftLauncher {
                     sourceIntent.putExtra("MC_SPLIT_SRC", new ArrayList<>(Arrays.asList(mcInfo.splitSourceDirs)));
                 }
                 sourceIntent.putExtra("MODS_ENABLED", modsEnabled);
+                sourceIntent.putExtra("MINECRAFT_LIBRARY_DIR", mcInfo.nativeLibraryDir);
                 sourceIntent.putExtra("MINECRAFT_VERSION", version.versionCode);
                 sourceIntent.putExtra("MINECRAFT_VERSION_DIR", version.directoryName);
 
