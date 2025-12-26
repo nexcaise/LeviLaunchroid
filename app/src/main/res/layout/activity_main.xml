@@ -165,7 +165,6 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_internet"
-                android:visibility="gone"
                 app:tint="@color/on_surface" />
         </LinearLayout>
 
