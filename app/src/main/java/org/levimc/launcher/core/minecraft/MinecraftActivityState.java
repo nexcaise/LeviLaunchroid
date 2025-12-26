@@ -3,6 +3,8 @@ package org.levimc.launcher.core.minecraft;
 import android.app.Activity;
 import java.lang.ref.WeakReference;
 import android.content.Context;
+import id.my.nexcaise.ncmodloader.NCModloader;
+import org.levimc.launcher.settings.FeatureSettings;
 
 public final class MinecraftActivityState {
     private static volatile boolean running = false;
