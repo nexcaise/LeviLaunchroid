@@ -187,6 +187,12 @@
     <string name="storage_version_isolation">Version Isolation</string>
     <string name="select_storage_label">Select Storage:</string>
     <string name="search_hint">Search…</string>
+    <string name="transfer">Transfer</string>
+    <string name="transfer_content">Transfer Content</string>
+    <string name="transfer_to">Transfer to:</string>
+    <string name="transfer_success">Transfer completed successfully</string>
+    <string name="transfer_failed">Transfer failed</string>
+    <string name="transfer_same_location">Content is already in this location</string>
 
     <!-- World Management -->
     <string name="world_size">Size: %s</string>
@@ -306,6 +312,7 @@
 
     <string name="crash_title">Application crashed</string>
     <string name="crash_back_to_main">Back to Home</string>
+    <string name="crash_share_log">Share Log</string>
     <string name="crash_log_file_label">Log file:</string>
     <string name="crash_log_file_missing">Log file not found or unreadable.</string>
     <string name="crash_read_failed">Failed to read log: %1$s</string>
