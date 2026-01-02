@@ -17,6 +17,7 @@ public class ModNativeLoader {
     public static void loadEnabledSoMods(String libraryDir, ModManager modManager, File cacheDir) {
         List<Mod> mods = modManager.getMods();
         for (Mod mod : mods) {
+            if(!mod.isEnabled) continue;
             File src = new File(modManager.getCurrentVersion().modsDir, mod.getFileName());
             File dir = new File(cacheDir, "mods");
             if (!dir.exists()) dir.mkdirs();

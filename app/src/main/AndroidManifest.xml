@@ -274,19 +274,28 @@
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_provider_paths" />
-    </provider>
-    <provider
-     android:name=".ui.activities.LeviDocumentsProvider"
-     android:authorities="org.levimc.launcher.documents"
-     android:exported="true"
-     android:grantUriPermissions="true"
-     android:permission="android.permission.MANAGE_DOCUMENTS">
-     <intent-filter>
-     <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
-     </intent-filter>
-     <grant-uri-permission android:pathPrefix="/" />
-    </provider>
-
+        </provider>
+        <provider
+            android:name=".ui.activities.LeviInternalDocumentsProvider"
+            android:authorities="org.levimc.launcher.documents"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+                <intent-filter>
+                    <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+                </intent-filter>
+            <grant-uri-permission android:pathPrefix="/" />
+        </provider>
+        <provider
+            android:name=".ui.activities.LeviExternalDocumentsProvider"
+            android:authorities="org.levimc.launcher.documents"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+                <intent-filter>
+                    <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+                </intent-filter>
+            <grant-uri-permission android:pathPrefix="/" />
+        </provider>
     </application>
-
 </manifest>

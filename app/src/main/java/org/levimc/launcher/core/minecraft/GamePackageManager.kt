@@ -34,10 +34,10 @@ class GamePackageManager private constructor(private val context: Context, priva
     )
 
     private val systemLoadedLibs = arrayOf(
+        "libgxcore.so",
         "libPlayFabMultiplayer.so",
         "libpairipcore.so",
-        "libgxcore.so",
-
+        "libpreloader.so"
     )
 
     init {
