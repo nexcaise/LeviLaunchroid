@@ -123,6 +123,7 @@ public class MinecraftLauncher {
                 if (mcInfo.splitSourceDirs != null) {
                     sourceIntent.putExtra("MC_SPLIT_SRC", new ArrayList<>(Arrays.asList(mcInfo.splitSourceDirs)));
                 }
+                sourceIntent.putExtra("MINECRAFT_LIBRARY_DIR", mcInfo.nativeLibraryDir);
                 sourceIntent.putExtra("MODS_ENABLED", modsEnabled);
                 sourceIntent.putExtra("MINECRAFT_VERSION", version.versionCode);
                 sourceIntent.putExtra("MINECRAFT_VERSION_DIR", version.directoryName);
@@ -148,12 +149,11 @@ public class MinecraftLauncher {
                         gameManager.loadLibrary("c++_shared");
                     }
                     gameManager.loadLibrary("fmod");
+                    gameManager.loadLibrary("preloader");
                     gameManager.loadLibrary("MediaDecoders_Android");
                     gameManager.loadLibrary("minecraftpe");
                     gameManager.loadLibrary("gxcore");
                 }
-                ModNativeLoader.loadEnabledSoMods(ModManager.getInstance(), context.getCacheDir());
-
                 activity.runOnUiThread(() -> {
                     dismissLoading();
                     activity.startActivity(sourceIntent);

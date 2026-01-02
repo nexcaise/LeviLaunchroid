@@ -321,6 +321,8 @@ class GamePackageManager private constructor(private val context: Context, priva
         }
     }
 
+    fun getInternalContext() : Context = context
+
     companion object {
         private const val TAG = "GamePackageManager"
 

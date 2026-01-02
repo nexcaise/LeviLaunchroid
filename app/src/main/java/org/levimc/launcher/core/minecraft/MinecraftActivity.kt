@@ -12,6 +12,8 @@ import org.levimc.launcher.core.mods.inbuilt.overlay.InbuiltOverlayManager
 import org.levimc.launcher.core.versions.GameVersion
 import org.levimc.launcher.settings.FeatureSettings
 import java.io.File
+import org.levimc.launcher.core.mods.ModNativeLoader
+import org.levimc.launcher.core.mods.ModManager
 
 class MinecraftActivity : MainActivity() {
 
@@ -23,6 +25,7 @@ class MinecraftActivity : MainActivity() {
             val versionDir = intent.getStringExtra("MC_PATH")
             val versionCode = intent.getStringExtra("MINECRAFT_VERSION") ?: ""
             val versionDirName = intent.getStringExtra("MINECRAFT_VERSION_DIR") ?: ""
+            val libraryDir = intent.getStringExtra("MINECRAFT_LIBRARY_DIR") ?: ""
             val isInstalled = intent.getBooleanExtra("IS_INSTALLED", false)
             val isIsolated = FeatureSettings.getInstance().isVersionIsolationEnabled()
 
@@ -53,13 +56,15 @@ class MinecraftActivity : MainActivity() {
             gameManager = GamePackageManager.getInstance(applicationContext, version)
 
             try {
-                System.loadLibrary("preloader")
+                if(!gameManager.loadLibrary("preloader")) {
+                  throw RuntimeException("Failed to load libpreloader.so")
+                }
+                ModNativeLoader.loadEnabledSoMods(libraryDir, ModManager.getInstance(), gameManager.getInternalContext().getCacheDir())
+                if (!gameManager.loadLibrary("minecraftpe")) {
+                  throw RuntimeException("Failed to load libminecraftpe.so")
+                }
             } catch (e: Exception) {
-                Log.w(TAG, "Failed to load preloader: ${e.message}")
-            }
-
-            if (!gameManager.loadLibrary("minecraftpe")) {
-                throw RuntimeException("Failed to load libminecraftpe.so")
+                Log.w(TAG, "Failed to load Library: ${e.message}")
             }
         } catch (e: Exception) {
             Toast.makeText(this, "Failed to load game: ${e.message}", Toast.LENGTH_LONG).show()
