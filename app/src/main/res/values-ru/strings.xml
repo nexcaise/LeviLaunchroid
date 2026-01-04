@@ -19,7 +19,7 @@
 
     <!-- О приложении -->
     <string name="about_title">☕ О приложении</string>
-    <string name="copyright">©2024–2025 LeviMC. Все права защищены.</string>
+    <string name="copyright">©2024–2026 LeviMC. Все права защищены.</string>
     <string name="font_license">Это приложение использует шрифт Misans.</string>
     <string name="about_footer_github">GitHub: https://github.com/LiteLDev/LeviLaunchroid</string>
     <string name="quick_actions_title">Быстрые действия</string>
@@ -360,6 +360,8 @@
     <string name="inbuilt_mod_fps_display_desc">Показывает текущую частоту кадров в секунду</string>
     <string name="inbuilt_mod_cps_display">Отображение CPS</string>
     <string name="inbuilt_mod_cps_display_desc">Показывает количество кликов в секунду</string>
+    <string name="inbuilt_mod_snaplook">Быстрый взгляд назад</string>
+    <string name="inbuilt_mod_snaplook_desc">Удерживайте для быстрого взгляда назад (вид спереди от третьего лица)</string>
     <string name="inbuilt_badge">ВСТРОЕН</string>
     <string name="autosprint_key_ctrl">Левый Ctrl</string>
     <string name="autosprint_key_shift">Shift</string>
