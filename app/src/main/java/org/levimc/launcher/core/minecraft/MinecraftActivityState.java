@@ -4,13 +4,16 @@ import android.app.Activity;
 import java.lang.ref.WeakReference;
 
 public final class MinecraftActivityState {
+    private static MinecraftActivity MCActivity;
     private static volatile boolean running = false;
     private static volatile boolean resumed = false;
     private static WeakReference<Activity> currentActivityRef;
 
     private MinecraftActivityState() {}
 
-    public static void onCreated(Activity activity) {
+    public static void onCreated(MinecraftActivity ma) {
+        MCActivity = ma;
+        Activity activity = (Activity) ma;
         running = true;
         currentActivityRef = new WeakReference<>(activity);
     }
@@ -39,5 +42,9 @@ public final class MinecraftActivityState {
 
     public static Activity getCurrentActivity() {
         return currentActivityRef != null ? currentActivityRef.get() : null;
+    }
+    
+    public static MinecraftActivity getMCActivity() {
+        return MCActivity != null ? MCActivity : null;
     }
 }

@@ -19,7 +19,7 @@ class MinecraftActivity : MainActivity() {
 
     private lateinit var gameManager: GamePackageManager
     private var overlayManager: InbuiltOverlayManager? = null
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         try {
             val versionDir = intent.getStringExtra("MC_PATH")
