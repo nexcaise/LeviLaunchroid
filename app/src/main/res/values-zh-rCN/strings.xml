@@ -154,6 +154,8 @@
     <string name="dialog_message_delete_mod">确定要删除该 Mod 吗？</string>
 
     <string name="version_isolation">版本隔离</string>
+    <string name="should_load_maesdk">应该加载 Maesdk</string>
+    <string name="should_load_playfab_and_httpclient">应该加载 Playfab 和 HttpClient</string>
     <!-- Language Setting -->
     <string name="language">语言</string>
     <string name="english">English</string>

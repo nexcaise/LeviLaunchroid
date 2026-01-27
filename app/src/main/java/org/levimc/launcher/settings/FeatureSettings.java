@@ -9,6 +9,8 @@ public class FeatureSettings {
     private boolean launcherManagedMcLoginEnabled = false;
     private boolean logcatOverlayEnabled = false;
     private boolean memoryEditorEnabled = false;
+    private boolean shouldLoadMaesdk = true;
+    private boolean shouldLoadPlayFabAndHttpClient = true;
 
     public enum StorageType {
         INTERNAL,
@@ -45,6 +47,12 @@ public class FeatureSettings {
 
     public boolean isMemoryEditorEnabled() { return memoryEditorEnabled; }
     public void setMemoryEditorEnabled(boolean enabled) { this.memoryEditorEnabled = enabled; autoSave(); }
+
+    public boolean isShouldLoadMaesdk() { return shouldLoadMaesdk; }
+    public void setShouldLoadMaesdk(boolean enabled) { this.shouldLoadMaesdk = enabled; autoSave(); }
+
+    public boolean isShouldLoadPlayFabAndHttpClient() { return shouldLoadPlayFabAndHttpClient; }
+    public void setShouldLoadPlayFabAndHttpClient(boolean enabled) { this.shouldLoadPlayFabAndHttpClient = enabled; autoSave(); }
 
     private void autoSave() {
         if (appContext != null) {

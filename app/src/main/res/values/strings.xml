@@ -155,6 +155,8 @@
     <string name="dialog_message_delete_mod">Are you sure you want to delete this mod?</string>
 
     <string name="version_isolation">Version Isolation</string>
+    <string name="should_load_maesdk">Should Load Maesdk</string>
+    <string name="should_load_playfab_and_httpclient">Should Load Playfab and HttpClient</string>
 
     <!-- Language Setting -->
     <string name="language">Language</string>
