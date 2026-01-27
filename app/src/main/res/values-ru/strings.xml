@@ -155,8 +155,9 @@
     <string name="dialog_message_delete_mod">Вы уверены, что хотите удалить этот мод?</string>
 
     <string name="version_isolation">Изоляция версий</string>
-    <string name="should_load_maesdk">Следует загрузить Maesdk</string>
-    <string name="should_load_playfab_and_httpclient">Необходимо загрузить Playfab и HttpClient.</string>
+    <string name="should_load_maesdk">Необходимо загрузить Maesdk</string>
+    <string name="should_load_playfab">Необходимо загрузить Playfab</string>
+    <string name="should_load_httpclient">Необходимо загрузить HttpClient</string>
 
     <!-- Настройки языка -->
     <string name="language">Язык</string>

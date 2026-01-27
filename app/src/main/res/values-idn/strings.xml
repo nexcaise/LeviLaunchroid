@@ -156,7 +156,8 @@
 
     <string name="version_isolation">Isolasi Versi</string>
     <string name="should_load_maesdk">Harus Memuat Maesdk</string>
-    <string name="should_load_playfab_and_httpclient">Harus Memuat Playfab dan HttpClient</string>
+    <string name="should_load_playfab">Harus Memuat Playfab</string>
+    <string name="should_load_httpclient">Harus Memuat HttpClient</string>
 
     <!-- Language Setting -->
     <string name="language">Bahasa</string>

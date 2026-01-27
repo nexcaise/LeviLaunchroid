@@ -73,7 +73,8 @@ public class SettingsActivity extends BaseActivity {
             addMemoryEditorSwitchItem(fs);
             addSwitchItem(getString(R.string.version_isolation), fs.isVersionIsolationEnabled(), (btn, checked) -> fs.setVersionIsolationEnabled(checked));
             addSwitchItem(getString(R.string.should_load_maesdk), fs.isShouldLoadMaesdk(), (btn, checked) -> fs.setShouldLoadMaesdk(checked));
-            addSwitchItem(getString(R.string.should_load_playfab_and_httpclient), fs.isShouldLoadPlayFabAndHttpClient(), (btn, checked) -> fs.setShouldLoadPlayFabAndHttpClient(checked));
+            addSwitchItem(getString(R.string.should_load_playfab), fs.isShouldLoadPlayFab(), (btn, checked) -> fs.setShouldLoadPlayFab(checked));
+            addSwitchItem(getString(R.string.should_load_httpclient), fs.isShouldLoadHttpClient(), (btn, checked) -> fs.setShouldLoadHttpClient(checked));
             addSwitchItem(getString(R.string.launcher_managed_mc_login), fs.isLauncherManagedMcLoginEnabled(), (btn, checked) -> fs.setLauncherManagedMcLoginEnabled(checked));
             addSwitchItem(getString(R.string.show_logcat_overlay), fs.isLogcatOverlayEnabled(), (btn, checked) -> {
                 fs.setLogcatOverlayEnabled(checked);

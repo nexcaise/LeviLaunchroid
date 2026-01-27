@@ -108,6 +108,7 @@ public class MinecraftLauncher {
 
     private void launchMinecraftActivity(Intent sourceIntent, GameVersion version, boolean modsEnabled) {
         Activity activity = (Activity) context;
+        FeatureSettings fs = FeatureSettings.getInstance();
 
         new Thread(() -> {
             try {
@@ -128,7 +129,7 @@ public class MinecraftLauncher {
                 sourceIntent.putExtra("MINECRAFT_VERSION", version.versionCode);
                 sourceIntent.putExtra("MINECRAFT_VERSION_DIR", version.directoryName);
 
-                if (shouldLoadHttpClient(version)) {
+                if (fs.isShouldLoadHttpClient(version)) {
                     gameManager.loadLibrary("c++_shared");
                     if (gameManager.loadLibrary("HttpClient.Android")) {
                         Log.d(TAG, "Loaded Minecraft's libHttpClient.Android.so");
@@ -139,16 +140,16 @@ public class MinecraftLauncher {
 
                 if (shouldLoadMaesdk(version)) {
                     java.util.Set<String> excludeLibs = new java.util.HashSet<>();
-                    if (shouldLoadHttpClient(version)) {
+                    if (fs.isShouldLoadHttpClient()) {
                         excludeLibs.add("c++_shared");
                         excludeLibs.add("HttpClient.Android");
                     }
-                    if (!shouldLoadPlayFab(version)) {
+                    if (!fs.isShouldLoadPlayFab()) {
                         excludeLibs.add("PlayFabMultiplayer");
                     }
                     gameManager.loadAllLibraries(excludeLibs);
                 } else {
-                    if (!shouldLoadHttpClient(version)) {
+                    if (!fs.isShouldLoadHttpClient()) {
                         gameManager.loadLibrary("c++_shared");
                     }
                     gameManager.loadLibrary("fmod");
@@ -170,7 +171,7 @@ public class MinecraftLauncher {
             }
         }).start();
     }
-
+/*
     private boolean shouldLoadMaesdk(GameVersion version) {
         if (version == null || version.versionCode == null) {
             return false;
@@ -197,7 +198,7 @@ public class MinecraftLauncher {
         String targetVersion = versionCode.contains("beta") ? "1.21.130.20" : "1.21.130";
         return isVersionAtLeast(versionCode, targetVersion);
     }
-
+*/
     private boolean isVersionAtLeast(String currentVersion, String targetVersion) {
         try {
             String[] current = currentVersion.replaceAll("[^0-9.]", "").split("\\.");

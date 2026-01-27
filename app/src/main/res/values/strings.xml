@@ -156,7 +156,8 @@
 
     <string name="version_isolation">Version Isolation</string>
     <string name="should_load_maesdk">Should Load Maesdk</string>
-    <string name="should_load_playfab_and_httpclient">Should Load Playfab and HttpClient</string>
+    <string name="should_load_playfab">Should Load Playfab</string>
+    <string name="should_load_httpclient">Should Load HttpClient</string>
 
     <!-- Language Setting -->
     <string name="language">Language</string>

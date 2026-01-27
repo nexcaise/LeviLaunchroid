@@ -10,7 +10,8 @@ public class FeatureSettings {
     private boolean logcatOverlayEnabled = false;
     private boolean memoryEditorEnabled = false;
     private boolean shouldLoadMaesdk = true;
-    private boolean shouldLoadPlayFabAndHttpClient = true;
+    private boolean shouldLoadPlayFab = true;
+    private boolean shouldLoadHttpClient = true;
 
     public enum StorageType {
         INTERNAL,
@@ -51,8 +52,11 @@ public class FeatureSettings {
     public boolean isShouldLoadMaesdk() { return shouldLoadMaesdk; }
     public void setShouldLoadMaesdk(boolean enabled) { this.shouldLoadMaesdk = enabled; autoSave(); }
 
-    public boolean isShouldLoadPlayFabAndHttpClient() { return shouldLoadPlayFabAndHttpClient; }
-    public void setShouldLoadPlayFabAndHttpClient(boolean enabled) { this.shouldLoadPlayFabAndHttpClient = enabled; autoSave(); }
+    public boolean isShouldLoadPlayFab() { return shouldLoadPlayFab; }
+    public void setShouldLoadPlayFab(boolean enabled) { this.shouldLoadPlayFab = enabled; autoSave(); }
+
+    public boolean isShouldLoadHttpClient() { return shouldLoadHttpClient; }
+    public void setShouldLoadHttpClient(boolean enabled) { this.shouldLoadHttpClient = enabled; autoSave(); }
 
     private void autoSave() {
         if (appContext != null) {
