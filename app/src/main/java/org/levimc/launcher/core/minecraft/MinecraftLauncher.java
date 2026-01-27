@@ -138,7 +138,7 @@ public class MinecraftLauncher {
                     }
                 }
 
-                if (fs.isShouldLoadMaesdk(version)) {
+                if (fs.isShouldLoadMaesdk()) {
                     java.util.Set<String> excludeLibs = new java.util.HashSet<>();
                     if (fs.isShouldLoadHttpClient()) {
                         excludeLibs.add("c++_shared");
