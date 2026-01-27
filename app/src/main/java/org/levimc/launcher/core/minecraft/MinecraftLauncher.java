@@ -129,7 +129,7 @@ public class MinecraftLauncher {
                 sourceIntent.putExtra("MINECRAFT_VERSION", version.versionCode);
                 sourceIntent.putExtra("MINECRAFT_VERSION_DIR", version.directoryName);
 
-                if (fs.isShouldLoadHttpClient(version)) {
+                if (fs.isShouldLoadHttpClient()) {
                     gameManager.loadLibrary("c++_shared");
                     if (gameManager.loadLibrary("HttpClient.Android")) {
                         Log.d(TAG, "Loaded Minecraft's libHttpClient.Android.so");
@@ -138,7 +138,7 @@ public class MinecraftLauncher {
                     }
                 }
 
-                if (shouldLoadMaesdk(version)) {
+                if (fs.isShouldLoadMaesdk(version)) {
                     java.util.Set<String> excludeLibs = new java.util.HashSet<>();
                     if (fs.isShouldLoadHttpClient()) {
                         excludeLibs.add("c++_shared");
