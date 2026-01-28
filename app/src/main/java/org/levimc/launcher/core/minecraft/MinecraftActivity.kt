@@ -7,7 +7,7 @@ import android.util.Log
 import android.view.KeyEvent
 import android.view.MotionEvent
 import android.widget.Toast
-import com.mojang.minecraftpe.MainActivity
+import com.mojang.minecraftpe.MainMinecraftActivity
 import org.levimc.launcher.core.mods.inbuilt.overlay.InbuiltOverlayManager
 import org.levimc.launcher.core.versions.GameVersion
 import org.levimc.launcher.settings.FeatureSettings
@@ -15,7 +15,7 @@ import java.io.File
 import org.levimc.launcher.core.mods.ModNativeLoader
 import org.levimc.launcher.core.mods.ModManager
 
-class MinecraftActivity : MainActivity() {
+class MinecraftActivity : MainMinecraftActivity() {
 
     private lateinit var gameManager: GamePackageManager
     private var overlayManager: InbuiltOverlayManager? = null

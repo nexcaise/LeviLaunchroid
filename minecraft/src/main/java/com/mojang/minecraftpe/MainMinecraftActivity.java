@@ -69,7 +69,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
 @SuppressWarnings("JavaJniMissingFunction")
-public class MainActivity extends GameActivity implements View.OnKeyListener, FilePickerManagerHandler {
+public class MainMinecraftActivity extends GameActivity implements View.OnKeyListener, FilePickerManagerHandler {
     static final int MSG_CORRELATION_CHECK = 672;
     static final int MSG_CORRELATION_RESPONSE = 837;
     static final int OPEN_FILE_RESULT_CODE = 5;
