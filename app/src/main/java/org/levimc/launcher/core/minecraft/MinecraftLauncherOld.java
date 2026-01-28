@@ -373,7 +373,14 @@ public class MinecraftLauncherOld {
                 }
 
                 try {
-                    ModNativeLoader.loadEnabledSoMods(ModManager.getInstance(), context.getCacheDir());
+                    try {
+                        System.loadLibrary("preloader");
+                    } catch (UnsatisfiedLinkError e) {
+                        //Logger.get().error("Error loading native libraries: " + e.getMessage());
+                        //throw e;
+                    }
+                    String ldir = mcInfo.nativeLibraryDir;
+                    ModNativeLoader.loadEnabledSoMods(ldir, ModManager.getInstance(), context.getCacheDir());
                 } catch (Exception e) {
                     //Logger.get().error("Error loading so mods: " + e.getMessage());
                 }

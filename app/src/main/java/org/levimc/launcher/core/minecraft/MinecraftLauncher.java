@@ -68,14 +68,18 @@ public class MinecraftLauncher {
     public void launch(Intent sourceIntent, GameVersion version) {
         Activity activity = (Activity) context;
         
-        if(shouldLaunchModern(version)) return launchModern(sourceIntent, version);
+        if(shouldLaunchModern(version)) {
+            launchModern(sourceIntent, version);
+            return;
+        }
         
         MinecraftLauncherOld mlo = new MinecraftLauncherOld(context, activity.getClassLoader());
         
-        return mlo.launch(sourceIntent, version);
+        mlo.launch(sourceIntent, version);
     }
 
     public void launchModern(Intent sourceIntent, GameVersion version) {
+        Activity activity = (Activity) context;
         try {
             if (version == null) {
                 Log.e(TAG, "No version selected");
