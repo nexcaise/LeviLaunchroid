@@ -80,7 +80,7 @@ public class MainMinecraftActivity extends GameActivity implements View.OnKeyLis
     private static boolean _isPowerVr;
     private static boolean mHasStoragePermission ;
     private static boolean mHasReadMediaImagesPermission;
-    public static MainActivity mInstance;
+    public static MainMinecraftActivity mInstance;
     Class SystemProperties;
     private ClipboardManager clipboardManager;
     Method getPropMethod;
@@ -125,7 +125,7 @@ public class MainMinecraftActivity extends GameActivity implements View.OnKeyLis
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             mService = new Messenger(iBinder);
             mBound = MessageConnectionStatus.CONNECTED;
-            Message obtain = Message.obtain(null, MainActivity.MSG_CORRELATION_CHECK, 0, 0);
+            Message obtain = Message.obtain(null, MainMinecraftActivity.MSG_CORRELATION_CHECK, 0, 0);
             obtain.replyTo = mMessenger;
             try {
                 mService.send(obtain);
@@ -638,7 +638,7 @@ public class MainMinecraftActivity extends GameActivity implements View.OnKeyLis
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String @NotNull [] permissions, int @NotNull [] grantResults) {
-        Log.i("MinecraftPlatform", "MainActivity::onRequestPermissionsResult");
+        Log.i("MinecraftPlatform", "MainMinecraftActivity::onRequestPermissionsResult");
         resumeGameplayUpdates();
         if (requestCode == STORAGE_PERMISSION_ID) {
             mHasStoragePermission = grantResults.length > 0 && grantResults[0] == 0;
@@ -692,9 +692,9 @@ public class MainMinecraftActivity extends GameActivity implements View.OnKeyLis
 
     public static class CustomEditText extends androidx.appcompat.widget.AppCompatEditText {
 
-        MainActivity activity;
+        MainMinecraftActivity activity;
 
-        public CustomEditText(MainActivity activity) {
+        public CustomEditText(MainMinecraftActivity activity) {
             super(activity);
             this.activity = activity;
         }
@@ -769,7 +769,7 @@ public class MainMinecraftActivity extends GameActivity implements View.OnKeyLis
         runOnUiThread(() -> {
             Log.d("Minecraft", "showKeyboard");
             if (keyboardInput == null) {
-                keyboardInput = new CustomEditText(MainActivity.this);
+                keyboardInput = new CustomEditText(MainMinecraftActivity.this);
 
                 keyboardInput.addTextChangedListener(new TextWatcher() {
                     @Override
@@ -1943,7 +1943,7 @@ public class MainMinecraftActivity extends GameActivity implements View.OnKeyLis
     class IncomingHandler extends Handler {
         @Override
         public void handleMessage(@NonNull Message msg) {
-            if (msg.what == MainActivity.MSG_CORRELATION_RESPONSE) {
+            if (msg.what == MainMinecraftActivity.MSG_CORRELATION_RESPONSE) {
                 final String packageName = getApplicationContext().getPackageName();
                 final SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
                 defaultSharedPreferences.getString("deviceId", "");

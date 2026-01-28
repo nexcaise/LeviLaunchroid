@@ -238,6 +238,7 @@
         <activity
             android:name=".core.minecraft.MinecraftActivity"
             android:alwaysRetainTaskState="true"
+            android:label="@string/minecraft"
             android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc"
             android:excludeFromRecents="false"
             android:exported="false"
@@ -254,12 +255,13 @@
         <activity
             android:name="com.mojang.minecraftpe.Launcher"
             android:alwaysRetainTaskState="true"
+            android:label="@string/minecraft"
             android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc"
             android:excludeFromRecents="false"
             android:exported="false"
             android:launchMode="singleTask"
             android:screenOrientation="sensorLandscape"
-            android:taskAffinity="com.mojang.minecraftpe"
+            android:taskAffinity="org.levimc.launcher.minecraft.old"
             android:theme="@style/AppFullScreenTheme"
             tools:ignore="DiscouragedApi">
             <meta-data
