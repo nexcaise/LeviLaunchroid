@@ -265,6 +265,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="preloader" />
+        </activity>
 
         <activity
             android:name="com.microsoft.xal.browser.IntentHandler"
