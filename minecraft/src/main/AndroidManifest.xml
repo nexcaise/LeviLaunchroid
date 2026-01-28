@@ -85,7 +85,7 @@
 
         <meta-data
             android:name="game_display_name"
-            android:resource="@string/app_mc_name" />
+            android:resource="@string/minecraft" />
 
         <meta-data
             android:name="appcenter_android_id"
