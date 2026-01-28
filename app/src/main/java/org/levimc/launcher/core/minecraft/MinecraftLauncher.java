@@ -67,7 +67,15 @@ public class MinecraftLauncher {
 
     public void launch(Intent sourceIntent, GameVersion version) {
         Activity activity = (Activity) context;
+        
+        if(shouldLaunchModern(version)) return launchModern(sourceIntent, version);
+        
+        MinecraftLauncherOld mlo = new MinecraftLauncherOld(context, activity.getClassLoader());
+        
+        return mlo.launch(sourceIntent, version);
+    }
 
+    public void launchModern(Intent sourceIntent, GameVersion version) {
         try {
             if (version == null) {
                 Log.e(TAG, "No version selected");
@@ -171,7 +179,21 @@ public class MinecraftLauncher {
             }
         }).start();
     }
-/*
+    
+    private boolean shouldLaunchModern(GameVersion version) {
+        if (version == null || version.versionCode == null) {
+            return false;
+        }
+
+        String versionCode = version.versionCode;
+
+        if (versionCode.contains("beta")) {
+            return isVersionAtLeast(versionCode, "1.21.100.20");
+        } else {
+            return isVersionAtLeast(versionCode, "1.21.100");
+        }
+    }
+
     private boolean shouldLoadMaesdk(GameVersion version) {
         if (version == null || version.versionCode == null) {
             return false;
@@ -198,7 +220,7 @@ public class MinecraftLauncher {
         String targetVersion = versionCode.contains("beta") ? "1.21.130.20" : "1.21.130";
         return isVersionAtLeast(versionCode, targetVersion);
     }
-*/
+
     private boolean isVersionAtLeast(String currentVersion, String targetVersion) {
         try {
             String[] current = currentVersion.replaceAll("[^0-9.]", "").split("\\.");
