@@ -7,7 +7,7 @@ import android.util.Log;
 public class DateTimeHelper {
     public static boolean Is24HourTimeFormat() {
         try {
-            return DateFormat.is24HourFormat(MainActivity.mInstance.getApplicationContext());
+            return DateFormat.is24HourFormat(MainMinecraftActivity.mInstance.getApplicationContext());
         } catch (Exception e) {
             return true;
         }
