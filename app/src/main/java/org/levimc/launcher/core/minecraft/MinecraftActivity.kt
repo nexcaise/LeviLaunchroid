@@ -11,6 +11,8 @@ import com.mojang.minecraftpe.MainActivity
 import org.levimc.launcher.core.mods.inbuilt.overlay.InbuiltOverlayManager
 import org.levimc.launcher.core.versions.GameVersion
 import org.levimc.launcher.settings.FeatureSettings
+import org.levimc.launcher.core.mods.ModManager
+import org.levimc.launcher.core.mods.ModNativeLoader
 import java.io.File
 
 class MinecraftActivity : MainActivity() {
