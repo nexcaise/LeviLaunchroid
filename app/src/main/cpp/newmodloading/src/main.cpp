@@ -5,7 +5,6 @@ static JavaVM* g_jvm = nullptr;
 
 static bool isLoaded = false;
 
-using LoadFunc = void (*)(JavaVM *);
 using LoadFunc = void (*)(JavaVM*);
 
 void LoadMod(JavaVM* vm, const char* path, int index) {
