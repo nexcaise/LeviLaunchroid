@@ -13,6 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModNativeLoader {
+    static {
+        System.loadLibrary("newmodloading");
+    }
+    
     private static final String TAG = "ModNativeLoader";
     @SuppressLint("UnsafeDynamicallyLoadedCode")
     public static void loadEnabledSoMods(ModManager modManager, File cacheDir) {
@@ -72,5 +76,5 @@ public class ModNativeLoader {
         return mods;
     }
     
-    private static native boolean nativeLoadMod(String path, int index);
+    public static native boolean nativeLoadMod(String path, int index);
 }
