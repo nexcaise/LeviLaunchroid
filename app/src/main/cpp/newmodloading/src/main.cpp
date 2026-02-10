@@ -6,18 +6,23 @@ static JavaVM* g_jvm = nullptr;
 static bool isLoaded = false;
 
 using LoadFunc = void (*)(JavaVM *);
+using LoadFunc = void (*)(JavaVM*);
+
 void LoadMod(JavaVM* vm, const char* path, int index) {
-    const char* options[] = {"LeviMod_LoadBefore", "LeviMod_LoadAfter"};
-    const char* type = nullptr;
-    if(index !=(index <= 1)) type = options[0];
-    type = options[index];
-    
-    if (void *handle = dlopen(path, RTLD_NOW)) {
-      LoadFunc func = (LoadFunc)dlsym(handle, type);
-      if (func) {
-        func(vm);
-      }
-    }
+    const char* options[] = {
+        "LeviMod_LoadBefore",
+        "LeviMod_LoadAfter"
+    };
+
+    if (index < 0 || index > 1) return;
+
+    void* handle = dlopen(path, RTLD_NOW);
+    if (!handle) return;
+
+    LoadFunc func = (LoadFunc)dlsym(handle, options[index]);
+    if (!func) return;
+
+    func(vm);
 }
 
 extern "C" jint JNICALL
@@ -35,8 +40,9 @@ Java_org_levimc_launcher_core_mods_ModNativeLoader_nativeLoadMod(
         jstring libPath,
         jint jindex
 ) {
-    if(isLoaded) return JNI_FALSE;
+    if(!isLoaded) return JNI_FALSE;
     const char* path = env->GetStringUTFChars(libPath, nullptr);
+    env->ReleaseStringUTFChars(libPath, path);
 
     int index = (int) jindex;
     LoadMod(g_jvm, path, index);
