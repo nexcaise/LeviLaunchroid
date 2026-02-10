@@ -40,10 +40,9 @@ public class ModNativeLoader {
             if (!dir.exists()) dir.mkdirs();
             File dst = new File(dir, mod.getFileName());
             try {
-                if(!dst.exists()) copyFile(src, dst);
+                copyFile(src, dst);
                 if(!nativeLoadMod(dst.getAbsolutePath(), index)) {
-                    System.loadLibrary("newmodloading");
-                    nativeLoadMod(dst.getAbsolutePath(), index);
+                    Log.e(TAG, "Can't load " + src.getName());
                 }
                 Log.i(TAG, "Loaded so: " + dst.getName());
             } catch (IOException | UnsatisfiedLinkError e) {

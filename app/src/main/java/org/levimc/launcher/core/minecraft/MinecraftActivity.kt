@@ -60,15 +60,22 @@ class MinecraftActivity : MainActivity() {
             } catch (e: Exception) {
                 Log.w(TAG, "Failed to load preloader: ${e.message}")
             }
-
+            
             val cacheDir = File(cacheDirPath)
-            if(FeatureSettings.getInstance().isNewModLoadMethodEnabled()) ModNativeLoader.loadEnabledSoMods(ModManager.getInstance(), cacheDir, 0)
+            if(FeatureSettings.getInstance().isNewModLoadMethodEnabled()) {
+                gameManager.loadLibrary("newmodloading")
+                Log.i(TAG, "LeviMod_LoadBefore")
+                ModNativeLoader.loadEnabledSoMods(ModManager.getInstance(), cacheDir, 0)
+            }
 
             if (!gameManager.loadLibrary("minecraftpe")) {
                 throw RuntimeException("Failed to load libminecraftpe.so")
             }
             
-            if(FeatureSettings.getInstance().isNewModLoadMethodEnabled()) ModNativeLoader.loadEnabledSoMods(ModManager.getInstance(), cacheDir, 1)
+            if(FeatureSettings.getInstance().isNewModLoadMethodEnabled()) {
+                Log.i(TAG, "LeviMod_LoadAfter")
+                ModNativeLoader.loadEnabledSoMods(ModManager.getInstance(), cacheDir, 1)
+            }
         } catch (e: Exception) {
             Toast.makeText(this, "Failed to load game: ${e.message}", Toast.LENGTH_LONG).show()
             finish()
