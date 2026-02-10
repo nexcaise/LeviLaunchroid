@@ -10,6 +10,7 @@ endif()
 
 add_subdirectory(unpaircore)
 add_subdirectory(preloader)
+add_subdirectory(newmodloading)
 add_subdirectory(levi_init)
 add_subdirectory(memoryeditor)
 add_subdirectory(inbuiltmods)

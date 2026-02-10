@@ -9,6 +9,7 @@ public class FeatureSettings {
     private boolean launcherManagedMcLoginEnabled = false;
     private boolean logcatOverlayEnabled = false;
     private boolean memoryEditorEnabled = false;
+    private boolean newModLoadMethodEnabled = false;
 
     public enum StorageType {
         INTERNAL,
@@ -45,6 +46,9 @@ public class FeatureSettings {
 
     public boolean isMemoryEditorEnabled() { return memoryEditorEnabled; }
     public void setMemoryEditorEnabled(boolean enabled) { this.memoryEditorEnabled = enabled; autoSave(); }
+    
+    public boolean isNewModLoadMethodEnabled() { return newModLoadMethodEnabled; }
+    public void setNewModLoadMethodEnabled(boolean enabled) { this.newModLoadMethodEnabled = enabled; autoSave(); }
 
     private void autoSave() {
         if (appContext != null) {

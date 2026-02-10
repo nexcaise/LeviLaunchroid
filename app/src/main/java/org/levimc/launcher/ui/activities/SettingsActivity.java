@@ -77,6 +77,7 @@ public class SettingsActivity extends BaseActivity {
             addThemeSelectorItem(themeManager);
             addLanguageSelectorItem(languageManager);
             addMemoryEditorSwitchItem(fs);
+            addSwitchItem(getString(R.string.new_modload_method), fs.isNewModLoadMethodEnabled(), (btn, checked) -> fs.setNewModLoadMethodEnabled(checked));
             addSwitchItem(getString(R.string.version_isolation), fs.isVersionIsolationEnabled(), (btn, checked) -> fs.setVersionIsolationEnabled(checked));
             addSwitchItem(getString(R.string.launcher_managed_mc_login), fs.isLauncherManagedMcLoginEnabled(), (btn, checked) -> fs.setLauncherManagedMcLoginEnabled(checked));
             addSwitchItem(getString(R.string.show_logcat_overlay), fs.isLogcatOverlayEnabled(), (btn, checked) -> {

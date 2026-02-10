@@ -154,6 +154,7 @@
     <string name="dialog_message_delete_mod">确定要删除该 Mod 吗？</string>
 
     <string name="version_isolation">版本隔离</string>
+    <string name="new_modload_method">新的模组加载方法</string>
     <!-- Language Setting -->
     <string name="language">语言</string>
     <string name="english">English</string>

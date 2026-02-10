@@ -155,6 +155,7 @@
     <string name="dialog_message_delete_mod">Вы уверены, что хотите удалить этот мод?</string>
 
     <string name="version_isolation">Изоляция версий</string>
+    <string name="new_modload_method">Новый способ загрузки модов</string>
 
     <!-- Настройки языка -->
     <string name="language">Язык</string>

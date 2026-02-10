@@ -20,6 +20,7 @@ class MinecraftActivity : MainActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         try {
+            val cacheDirPath = intent.getStringExtra("CACHE_DIR")
             val versionDir = intent.getStringExtra("MC_PATH")
             val versionCode = intent.getStringExtra("MINECRAFT_VERSION") ?: ""
             val versionDirName = intent.getStringExtra("MINECRAFT_VERSION_DIR") ?: ""
@@ -58,9 +59,14 @@ class MinecraftActivity : MainActivity() {
                 Log.w(TAG, "Failed to load preloader: ${e.message}")
             }
 
+            val cacheDir = File(cacheDirPath)
+            if(FeatureSettings.getInstance().isNewModLoadMethodEnabled()) ModNativeLoader.loadEnabledSoMods(ModManager.getInstance(), cacheDir, 0)
+
             if (!gameManager.loadLibrary("minecraftpe")) {
                 throw RuntimeException("Failed to load libminecraftpe.so")
             }
+            
+            if(FeatureSettings.getInstance().isNewModLoadMethodEnabled()) ModNativeLoader.loadEnabledSoMods(ModManager.getInstance(), cacheDir, 1)
         } catch (e: Exception) {
             Toast.makeText(this, "Failed to load game: ${e.message}", Toast.LENGTH_LONG).show()
             finish()

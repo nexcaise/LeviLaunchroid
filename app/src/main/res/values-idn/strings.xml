@@ -155,6 +155,7 @@
     <string name="dialog_message_delete_mod">Apakah Anda yakin ingin menghapus mod ini?</string>
 
     <string name="version_isolation">Isolasi Versi</string>
+    <string name="new_modload_method">Metode Pemuatan Mod Baru</string>
 
     <!-- Language Setting -->
     <string name="language">Bahasa</string>
