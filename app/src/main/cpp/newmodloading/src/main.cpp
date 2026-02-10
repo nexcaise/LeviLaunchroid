@@ -31,7 +31,7 @@ extern "C" {
 JNIEXPORT jboolean JNICALL
 Java_org_levimc_launcher_core_mods_ModNativeLoader_nativeLoadMod(
         JNIEnv* env,
-        jobject thiz,
+        jclass thiz,
         jstring libPath,
         jint jindex
 ) {

@@ -73,5 +73,5 @@ public class ModNativeLoader {
         return mods;
     }
     
-    private native boolean nativeLoadMod(String path, int index);
+    private static native boolean nativeLoadMod(String path, int index);
 }
