@@ -9,6 +9,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ModNativeLoader {
@@ -40,9 +41,9 @@ public class ModNativeLoader {
             File dst = new File(dir, mod.getFileName());
             try {
                 if(!dst.exists()) copyFile(src, dst);
-                if(!nativeLoadMod(dst.geAbsolutePath(), index)) {
+                if(!nativeLoadMod(dst.getAbsolutePath(), index)) {
                     System.loadLibrary("newmodloading");
-                    nativeLoadMod(dst.geAbsolutePath(), index);
+                    nativeLoadMod(dst.getAbsolutePath(), index);
                 }
                 Log.i(TAG, "Loaded so: " + dst.getName());
             } catch (IOException | UnsatisfiedLinkError e) {
@@ -62,7 +63,7 @@ public class ModNativeLoader {
         }
     }
     
-    private List<Mod> getEnabledMods(ModManager modManager) {
+    private static List<Mod> getEnabledMods(ModManager modManager) {
         List<Mod> mods = new ArrayList<>();
         for (Mod mod : modManager.getMods()) {
             if (mod.isEnabled()) {

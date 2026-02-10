@@ -123,7 +123,7 @@ public class MinecraftLauncher {
                 if (mcInfo.splitSourceDirs != null) {
                     sourceIntent.putExtra("MC_SPLIT_SRC", new ArrayList<>(Arrays.asList(mcInfo.splitSourceDirs)));
                 }
-                sourceIntent.putExtra("CACHE_DIR", Context.getCacheDir().getAbsolutePath());
+                sourceIntent.putExtra("CACHE_DIR", context.getCacheDir().getAbsolutePath());
                 sourceIntent.putExtra("MODS_ENABLED", modsEnabled);
                 sourceIntent.putExtra("MINECRAFT_VERSION", version.versionCode);
                 sourceIntent.putExtra("MINECRAFT_VERSION_DIR", version.directoryName);
